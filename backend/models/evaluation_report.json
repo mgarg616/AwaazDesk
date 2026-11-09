@@ -2,7 +2,7 @@
   "metadata": {
     "dataset_version": "1.0.0",
     "dataset_sha256": "5dd5b4d14ee1befb59cfbbe7ad577314c0aca986bf7be0230513c3102b5e2c03",
-    "evaluation_timestamp": "2026-11-09T08:48:58.040589",
+    "evaluation_timestamp": "2026-11-09T14:35:22.112565",
     "scikit_learn_version": "1.9.1",
     "random_seed": 42,
     "model_type": "Scikit-Learn TF-IDF + LogisticRegression",

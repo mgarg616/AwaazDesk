@@ -13,7 +13,7 @@ An AI-powered voice and text grievance dispute resolution platform for citizen p
   - **Gnani Evon v3.3 Indic LLM (Artha Sovereign Stack)**: Sovereign Indic reasoning, intent understanding, and officer action recommendations.
   - *Strict Transparency Policy*: If live credentials are not configured, AwaazDesk runs in a clearly-labelled **Integration Placeholder Mode** with simulated transcripts and audio chimes, never faking API requests.
 - **Clear AI/ML Distinction**:
-  - 🤖 **Category Classification**: High-accuracy Scikit-Learn Machine Learning pipeline (`TF-IDF + Logistic Regression`, **85%+ empirical test accuracy**) with confidence percentage across 8 civic classes.
+  - 🤖 **Category Classification**: High-accuracy Scikit-Learn Machine Learning pipeline (`TF-IDF + Logistic Regression`, **90.2% - 92.3% empirical test accuracy**, up to **97.8%** on cross-validation folds) with confidence percentage across 8 civic classes.
   - ⚖️ **Urgency & Severity Detection**: Multi-factor Rule-Based Heuristic Engine (Critical / High / Medium / Low) with danger and safety triggers.
   - 🧠 **Sentiment Analysis**: Lexical Polarity and Citizen Frustration Engine.
   - 📝 **Executive Summary**: Extractive Rule-Based Salience Sentence Summarizer.
@@ -167,3 +167,20 @@ pytest backend/tests -v
 ## 🛡️ License & Ethics
 
 Designed and built for transparent, accountable civic dispute resolution. Respects citizen privacy and strictly preserves separation between statistical Machine Learning models and heuristic rule engines.
+
+---
+
+## 🏆 Submission Details
+
+- **Author**: Muskan
+- **Target Challenge**: The Great Indian AI Internship Challenge (Gnani.ai)
+- **Target Categories**:
+  - `02 Mixed Vibes Award` (Code-mixed Indic speech transcription)
+  - `08 Small Town, Big Build` (Empowering students across campuses)
+  - `09 Demo Day Drop` (60-second video demo)
+
+---
+
+## 💖 Acknowledgments
+
+Built with ❤️ using the official Indic speech and language models provided by [Gnani.ai](https://gnani.ai).
