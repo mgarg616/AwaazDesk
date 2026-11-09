@@ -2,6 +2,8 @@
 
 An AI-powered voice and text grievance dispute resolution platform for citizen public utilities and civic governance in **Hindi**, **English**, and **Hinglish**.
 
+> 📄 **Executive Solution Pitch (1-Page Document):** [Read SOLUTION_PITCH.md](SOLUTION_PITCH.md)
+
 ---
 
 ## 📌 Objective & Core Highlights
