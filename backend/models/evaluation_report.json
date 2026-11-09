@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "dataset_version": "1.0.0",
+    "dataset_sha256": "5dd5b4d14ee1befb59cfbbe7ad577314c0aca986bf7be0230513c3102b5e2c03",
+    "evaluation_timestamp": "2026-11-09T08:48:58.040589",
+    "scikit_learn_version": "1.9.1",
+    "random_seed": 42,
+    "model_type": "Scikit-Learn TF-IDF + LogisticRegression",
+    "model_configuration": {
+      "vectorizer": {
+        "ngram_range": [
+          1,
+          2
+        ],
+        "max_features": 5000,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)[\\w\\u0900-\\u097F]+"
+      },
+      "classifier": {
+        "C": 6.0,
+        "max_iter": 1000,
+        "class_weight": "balanced",
+        "random_state": 42
+      }
+    },
+    "total_samples": 610,
+    "train_samples": 457,
+    "test_samples": 153,
+    "classes": [
+      "Banking & Financial Services",
+      "Civic Infrastructure & Sanitation",
+      "Electricity & Power Supply",
+      "Healthcare & Civil Supplies",
+      "Other Grievances",
+      "Public Transport & Railways",
+      "Telecommunications & Internet",
+      "Water Supply & Drainage"
+    ],
+    "class_count": 8
+  },
+  "empirical_metrics": {
+    "cv_5fold_mean_accuracy": 0.9234,
+    "cv_5fold_std": 0.0309,
+    "cv_fold_scores": [
+      0.8913,
+      0.9783,
+      0.9121,
+      0.9011,
+      0.9341
+    ],
+    "test_accuracy": 0.902,
+    "test_balanced_accuracy": 0.902,
+    "macro_precision": 0.9087,
+    "macro_recall": 0.902,
+    "macro_f1": 0.9034,
+    "weighted_f1": 0.9029
+  },
+  "language_breakdown": {
+    "en": {
+      "sample_count": 47,
+      "correct_predictions": 45,
+      "accuracy": 0.9574,
+      "macro_f1": 0.9521,
+      "weighted_f1": 0.9561,
+      "disclosure": "Small sample size limitation (N=47 held-out test samples). High variance expected; Indic scripts exhibit token sparsity with n-gram models."
+    },
+    "hi": {
+      "sample_count": 49,
+      "correct_predictions": 42,
+      "accuracy": 0.8571,
+      "macro_f1": 0.8485,
+      "weighted_f1": 0.8542,
+      "disclosure": "Small sample size limitation (N=49 held-out test samples). High variance expected; Indic scripts exhibit token sparsity with n-gram models."
+    },
+    "hinglish": {
+      "sample_count": 57,
+      "correct_predictions": 51,
+      "accuracy": 0.8947,
+      "macro_f1": 0.902,
+      "weighted_f1": 0.8995,
+      "disclosure": "Small sample size limitation (N=57 held-out test samples). High variance expected; Indic scripts exhibit token sparsity with n-gram models."
+    }
+  },
+  "classification_report": {
+    "Banking & Financial Services": {
+      "precision": 0.8181818181818182,
+      "recall": 0.9473684210526315,
+      "f1-score": 0.8780487804878049,
+      "support": 19.0
+    },
+    "Civic Infrastructure & Sanitation": {
+      "precision": 0.782608695652174,
+      "recall": 0.9,
+      "f1-score": 0.8372093023255814,
+      "support": 20.0
+    },
+    "Electricity & Power Supply": {
+      "precision": 0.9473684210526315,
+      "recall": 0.9473684210526315,
+      "f1-score": 0.9473684210526315,
+      "support": 19.0
+    },
+    "Healthcare & Civil Supplies": {
+      "precision": 1.0,
+      "recall": 0.9473684210526315,
+      "f1-score": 0.972972972972973,
+      "support": 19.0
+    },
+    "Other Grievances": {
+      "precision": 0.8947368421052632,
+      "recall": 0.8947368421052632,
+      "f1-score": 0.8947368421052632,
+      "support": 19.0
+    },
+    "Public Transport & Railways": {
+      "precision": 0.9444444444444444,
+      "recall": 0.8947368421052632,
+      "f1-score": 0.918918918918919,
+      "support": 19.0
+    },
+    "Telecommunications & Internet": {
+      "precision": 0.9411764705882353,
+      "recall": 0.8421052631578947,
+      "f1-score": 0.8888888888888888,
+      "support": 19.0
+    },
+    "Water Supply & Drainage": {
+      "precision": 0.9411764705882353,
+      "recall": 0.8421052631578947,
+      "f1-score": 0.8888888888888888,
+      "support": 19.0
+    },
+    "accuracy": 0.9019607843137255,
+    "macro avg": {
+      "precision": 0.9087116453266002,
+      "recall": 0.9019736842105264,
+      "f1-score": 0.9033791269551188,
+      "support": 153.0
+    },
+    "weighted avg": {
+      "precision": 0.9078874430411465,
+      "recall": 0.9019607843137255,
+      "f1-score": 0.9029466444412002,
+      "support": 153.0
+    }
+  },
+  "classification_report_text": "                                   precision    recall  f1-score   support\n\n     Banking & Financial Services       0.82      0.95      0.88        19\nCivic Infrastructure & Sanitation       0.78      0.90      0.84        20\n       Electricity & Power Supply       0.95      0.95      0.95        19\n      Healthcare & Civil Supplies       1.00      0.95      0.97        19\n                 Other Grievances       0.89      0.89      0.89        19\n      Public Transport & Railways       0.94      0.89      0.92        19\n    Telecommunications & Internet       0.94      0.84      0.89        19\n          Water Supply & Drainage       0.94      0.84      0.89        19\n\n                         accuracy                           0.90       153\n                        macro avg       0.91      0.90      0.90       153\n                     weighted avg       0.91      0.90      0.90       153\n",
+  "confusion_matrix": {
+    "matrix": [
+      [
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        18,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        18,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        17,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        16,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16
+      ]
+    ],
+    "labels": [
+      "Banking & Financial Services",
+      "Civic Infrastructure & Sanitation",
+      "Electricity & Power Supply",
+      "Healthcare & Civil Supplies",
+      "Other Grievances",
+      "Public Transport & Railways",
+      "Telecommunications & Internet",
+      "Water Supply & Drainage"
+    ]
+  },
+  "sample_data_labeling_and_limitations": {
+    "dataset_nature": "Curated multilingual grievance sample dataset (Hindi, English, Hinglish).",
+    "sample_size_limitation": "Sample size is limited to 610 samples (approx 15 per class). In production municipal deployments with 10,000+ complaints, variance will stabilize.",
+    "probability_calibration_status": "Uncalibrated Raw Softmax Scores",
+    "calibration_assessment": "Model confidence outputs are raw multinomial logistic softmax scores, NOT calibrated probabilities. Fitting post-hoc calibration (Platt scaling or Isotonic regression) requires a sizable independent validation split. With only 120 total samples (90 train / 30 test) across 8 classes, an additional validation split would starve the training set (<8 samples per class). Fitting a calibrator on the held-out test set would violate evaluation integrity. Therefore, raw scores are retained and the 0.35 confidence threshold is treated as an experimental triage heuristic.",
+    "spelling_variation_challenge": "Informal phonetic Hinglish exhibits heavy orthographic variation (e.g., 'paani' vs 'pani' vs 'paani nahi aa raha'). Character n-grams and sublinear TF mitigate this, but extreme dialectal slang may require phonetic normalization.",
+    "semantic_overlap_limitation": "Real-world grievances frequently cross domains (e.g. 'broken road with flooded sewage' overlaps Civic Infrastructure and Water Drainage). The model outputs full probability distributions to provide transparency into borderline cases.",
+    "continuous_learning_recommendation": "Use the '/api/ml/retrain' endpoint to continuously incorporate verified citizen tickets into the training corpus as new complaints are resolved."
+  }
+}
